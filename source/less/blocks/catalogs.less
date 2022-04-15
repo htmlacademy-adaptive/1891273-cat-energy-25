@@ -13,6 +13,7 @@
   background-color: #F2F2F2;
   font-family: "Oswald", sans-serif;
   color: @color-black;
+  margin-top: 20px;
 }
 
 .catalog__icon--cat-skinny {
@@ -57,8 +58,24 @@
 
 .link-details-catalog__icon {
   margin-left: 15px;
+  fill: @color-black;
+  stroke: @color-black;
 }
 
 .link-details-catalog {
   border-top: 1px solid #D9D9D9;
+  &:hover .link-details-catalog__icon {
+    width: 32px;
+  }
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+  &:active .link-details-catalog__icon {
+    width: 32px;
+    fill: rgba(0, 0, 0, 0.3);
+    stroke: rgba(0, 0, 0, 0.3);
+  }
+  &:active .link-details-catalog__text{
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

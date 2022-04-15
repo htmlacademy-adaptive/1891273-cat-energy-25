@@ -26,10 +26,11 @@
   margin-left: 0;
   text-decoration: none;
   margin-left: @basic-margin;
-
-
   &:hover {
     fill-opacity: 80%;
+  }
+  &:focus {
+    outline: 1px solid @color-green;
   }
   &:active {
     fill-opacity: 60%;
@@ -40,6 +41,9 @@
   padding: 0;
   border: 0;
   margin-right: @basic-margin;
+  &:focus {
+    outline: 1px solid @color-green;
+  }
 }
 
 .site-list {
@@ -62,4 +66,17 @@
   padding-top: 22px;
   padding-bottom: 24px;
   margin: auto;
+   &:hover {
+     color:rgba(0, 0, 0, 0.6);
+   }
+   &:focus {
+    outline: 1px solid @color-green;
+  }
+   &:active {
+    color:rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-list__link--acrive {
+  border-bottom: 2px solid @color-green;
 }
