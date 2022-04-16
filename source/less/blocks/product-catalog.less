@@ -48,6 +48,16 @@
 .button-catalog--product {
   background-color: @color-green;
   color: @color-white;
+  &:hover {
+    background-color: #5EAA2F;
+  }
+  &:focus {
+    outline: 1px solid @color-white;
+  }
+  &:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
 }
 
@@ -57,6 +67,9 @@
   border: none;
   margin-top: 21px;
   margin-bottom: 25px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .product-additional__button {
@@ -79,4 +92,20 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+}
+
+.product-additional__button-all {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #EBEBEB;
+  }
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+  &:active {
+    background-color: #EBEBEB;
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
