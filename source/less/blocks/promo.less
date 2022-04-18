@@ -5,16 +5,16 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url(/fonts/oswaldregular.woff);
+  src: url("/fonts/oswaldregular.woff");
 }
 
 .promo {
-  background: url(/img/background-cat.jpeg) no-repeat @color-green;
+  background: url("/img/background-cat.jpeg");
   background-color: @color-white;
 }
 
 .promo__intro {
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -34,14 +34,17 @@
   text-transform: uppercase;
   background-color: @color-green;
   text-align: center;
+
   &:hover {
-    background-color: #5EAA2F;
+    background-color: #5eaa2f;
   }
+
   &:focus {
     outline: 1px solid @color-white;
   }
+
   &:active {
-    background-color: #5EAA2F;
+    background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
 }

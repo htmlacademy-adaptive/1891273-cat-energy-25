@@ -22,24 +22,22 @@
   text-decoration: none;
 }
 
-.link-html-academy {
-  text-decoration: none;
-}
-
 .logo-text {
   fill: #111111;
 }
 
-.link-logo-text{
+.link-logo-text {
   &:hover .logo-text {
-  fill: rgba(17, 17, 17, 0.8);
+    fill: rgba(17, 17, 17, 0.8);
   }
+
   &:focus {
     outline: 1px solid @color-green;
-    }
+  }
+
   &:active .logo-text {
     fill: rgba(17, 17, 17, 0.6);
-    }
+  }
 }
 
 .social-network__icon {
@@ -50,24 +48,31 @@
   &:hover .social-network__icon {
     fill: @color-green;
   }
+
   &:focus {
     outline: 1px solid @color-green;
   }
+
   &:active .social-network__icon {
     fill: rgba(104, 183, 56, 0.3);
   }
 }
 
 .link-html-academy {
+  text-decoration: none;
+
   &:hover .link-html-academy__image {
     fill: @color-green;
   }
+
   &:focus {
     outline: 1px solid @color-green;
   }
+
   &:active .link-html-academy__image {
-    fill: rgba(104, 183, 56, 0.3)
+    fill: rgba(104, 183, 56, 0.3);
   }
+
   &:active .link-html-academy__text {
     color: rgba(68, 68, 68, 0.3);
   }
