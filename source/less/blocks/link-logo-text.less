@@ -1,0 +1,17 @@
+.link-logo-text {
+  &:hover .link-logo-text__image {
+    fill: rgba(17, 17, 17, 0.8);
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active .link-logo-text__image {
+    fill: rgba(17, 17, 17, 0.6);
+  }
+}
+
+.link-logo-text__image {
+  fill: #111111;
+}
