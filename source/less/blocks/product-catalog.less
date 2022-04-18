@@ -1,0 +1,115 @@
+@color-green: #68B738;
+@color-white: #ffffff;
+@color-black: #000000;
+@basic-margin: 20px;
+
+.product-catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0, @basic-margin, 0, @basic-margin;
+}
+
+.product-catalog__item {
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 8px;
+  padding-bottom: 11px;
+}
+
+.description-product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.description-product__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.description-product__description,
+.description-product__meaning {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.button-catalog {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-catalog--product {
+  background-color: @color-green;
+  color: @color-white;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    outline: 1px solid @color-white;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-catalog--view {
+  color: #444444;
+  background-color: #f2f2f2;
+  border: none;
+  margin-top: 21px;
+  margin-bottom: 25px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.product-additional__button {
+  border: none;
+  background-color: @color-white;
+}
+
+.product-additional__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+
+.product-additional__intro {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+}
+
+.product-additional__button-all {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

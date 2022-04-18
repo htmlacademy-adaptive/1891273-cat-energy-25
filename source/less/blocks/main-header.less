@@ -1,0 +1,89 @@
+@color-green: #68B738;
+@color-white: #ffffff;
+@color-black: #000000;
+@basic-margin: 20px;
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  background-color: @color-white;
+  color: @color-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: @basic-margin;
+  margin-right: @basic-margin;
+}
+
+.link-logo {
+  text-decoration: none;
+  margin-left: @basic-margin;
+
+  &:hover {
+    fill-opacity: 80%;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active {
+    fill-opacity: 60%;
+  }
+}
+
+.main-header__button {
+  padding: 0;
+  border: none;
+  margin-right: @basic-margin;
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+}
+
+.site-list {
+  background-color: @color-white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+  min-height: 66px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: @color-black;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  margin: auto;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-list__link--acrive {
+  border-bottom: 2px solid @color-green;
+}

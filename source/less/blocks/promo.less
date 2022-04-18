@@ -1,0 +1,50 @@
+@color-green: #68B738;
+@color-white: #ffffff;
+@color-black: #000000;
+@basic-margin: 20px;
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/oswaldregular.woff");
+}
+
+.promo {
+  background: url("/img/background-cat.jpeg") no-repeat @color-green;
+  background-color: @color-white;
+}
+
+.promo__intro {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: @color-white;
+}
+
+.promo__image {
+  margin-top: 29px;
+}
+
+.promo__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: @color-green;
+  text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    outline: 1px solid @color-white;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
