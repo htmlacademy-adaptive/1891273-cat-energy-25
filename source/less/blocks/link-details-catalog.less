@@ -1,0 +1,36 @@
+.link-details-catalog {
+  // border-top: 1px solid #d9d9d9;
+  text-decoration: none;
+
+  &:hover .link-details-catalog__icon {
+    width: 32px;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active .link-details-catalog__icon {
+    width: 32px;
+    fill: @color-black-opacity;
+    stroke: @color-black-opacity;
+  }
+
+  &:active .link-details-catalog__text {
+    color: @color-black-opacity;
+  }
+}
+
+.link-details-catalog__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @color-black;
+}
+
+.link-details-catalog__icon {
+  margin-left: 15px;
+  fill: @color-black;
+  stroke: @color-black;
+}

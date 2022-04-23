@@ -1,0 +1,36 @@
+.group-input {
+  &--main-form {
+    border-bottom: 1px solid @color-basic-grey;
+  }
+}
+
+.group-input__item {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-special-grey;
+  margin-bottom: 13px;
+}
+
+.group-input__input {
+  border: 1px solid @color-basic-grey-dark;
+  margin-left: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-special-grey;
+
+  &:hover {
+    border: 1px solid @color-basic-grey-dark;
+  }
+
+  &:focus {
+    border: 1px solid @color-special-grey;
+  }
+
+  &.group-input__input--error {
+    border: 1px solid @color-error;
+  }
+}

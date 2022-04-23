@@ -1,0 +1,31 @@
+.link-html-academy__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  color: @color-special-grey;
+  text-decoration: none;
+}
+
+.link-html-academy {
+  text-decoration: none;
+
+  &:hover .link-html-academy__image {
+    fill: @color-green;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active .link-html-academy__image {
+    fill: @color-grey-light-opacity;
+  }
+
+  &:active .link-html-academy__text {
+    color: @color-grey-opacity;
+  }
+}
+
+.link-html-academy__image {
+  fill: @color-special-grey-light;
+}

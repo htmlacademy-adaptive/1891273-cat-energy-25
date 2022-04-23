@@ -1,0 +1,21 @@
+.social-network__list {
+  list-style-type: none;
+}
+
+.social-network__icon {
+  fill: @color-special-grey-light;
+}
+
+.social-network__link {
+  &:hover .social-network__icon {
+    fill: @color-green;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active .social-network__icon {
+    fill: @color-grey-light-opacity;
+  }
+}

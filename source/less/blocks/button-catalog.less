@@ -1,0 +1,33 @@
+.button-catalog {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--product {
+    background-color: @color-green;
+    color: @color-white;
+
+    &:hover {
+      background-color: @color-green-dark;
+    }
+
+    &:focus {
+      outline: 1px solid @color-white;
+    }
+
+    &:active {
+      background-color: @color-green-dark;
+      color: @color-white-opacity;
+    }
+  }
+
+  &--view {
+    color: @color-special-grey;
+    background-color: @color-basic-grey-light;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+}
