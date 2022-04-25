@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -16,7 +19,6 @@
 .site-list__link {
   text-decoration: none;
   color: @color-black;
-
   margin: auto;
 
   &:hover {
@@ -29,5 +31,11 @@
 
   &:active {
     color: @color-black-opacity;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+    height: 36px;
+    display: block;
   }
 }

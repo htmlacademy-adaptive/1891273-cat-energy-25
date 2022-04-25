@@ -6,6 +6,14 @@
 .promo {
   background: url("/img/background-cat.jpeg") no-repeat @color-green;
   background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    margin-left: @basic-margin;
+    margin-right: @basic-margin;
+  }
 }
 
 .promo__intro {
@@ -14,10 +22,30 @@
   line-height: 14px;
   text-align: center;
   color: @color-white;
+  @media (min-width: @tablet-width) {
+    color: @color-black;
+    text-transform: uppercase;
+    margin-left: 89px;
+    text-align: start;
+  }
 }
 
 .promo__image {
   margin-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.promo__image-tablet {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .promo__button {
@@ -46,5 +74,17 @@
   &:active {
     background-color: @color-green-dark;
     color: @color-white-opacity;
+  }
+
+  &--top {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 292px;
+      margin-left: 90px;
+      width: 244px;
+      height: 54px;
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

@@ -12,11 +12,22 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  font-weight: bold;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    margin-right: @tablet-margin;
+  }
 }
-
 .main-header__link {
   margin-left: @basic-margin;
+  @media (min-width: @tablet-width) {
+    margin-left: @tablet-margin;
+  }
 }
 
 .main-header__button {
@@ -28,6 +39,10 @@
   &:focus {
     outline: 1px solid @color-green;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__wrapper {
@@ -36,8 +51,53 @@
   justify-content: space-between;
   margin-left: @basic-margin;
   margin-right: @basic-margin;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 174px;
+  }
 }
 
 .main-header__icon {
   margin-right: 0;
+}
+
+.main-header__logo {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-tablet {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-desktop {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
