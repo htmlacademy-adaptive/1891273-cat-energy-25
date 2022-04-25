@@ -1,5 +1,14 @@
+.social-network {
+  border-bottom: 1px solid @color-grey;
+}
+
 .social-network__list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .social-network__icon {
@@ -7,6 +16,8 @@
 }
 
 .social-network__link {
+  display: block;
+
   &:hover .social-network__icon {
     fill: @color-green;
   }
@@ -17,5 +28,12 @@
 
   &:active .social-network__icon {
     fill: @color-grey-light-opacity;
+  }
+}
+
+.social-network__item {
+  &--youtube {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }

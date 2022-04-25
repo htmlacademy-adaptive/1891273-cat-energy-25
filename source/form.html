@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -51,18 +51,18 @@
               </clipPath>
             </defs>
           </svg>
+          <button class="main-header__button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-header__icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title class="visually-hidden">Картинка кнопки меню.</title>
+              <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+              <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+              <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+            </svg>
+          </button>
         </div>
       </a>
       <div class="main-header__toggle">
-        <button class="main-header__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="main-header__icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <title class="visually-hidden">Картинка кнопки меню.</title>
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-          </svg>
-        </button>
         <ul class="main-header__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -97,7 +97,7 @@
               <input class="group-input__input" type="number" id="age" name="age" value="7">
             </div>
           </fieldset>
-          <fieldset class="form-container__group group-input group-input--main-form">
+          <fieldset class="form-container__group group-input group-input--main-form group-input--program-selection">
             <legend class="visually-hidden">Выбор программы.</legend>
             <input class="group-input__input" type="radio" id="weight-loss" name="program-selection" value="Похудение" checked>
             <label class="group-input__meaning" for="weight-loss">Похудение</label>

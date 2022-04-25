@@ -1,6 +1,14 @@
 .footer-container {
   margin: 0;
-  padding: 0;
-  padding-left: @basic-margin;
-  padding-right: @basic-margin;
+  padding: 0 @basic-margin 0 @basic-margin;
+  background-color: @color-basic-grey-light;
+}
+
+.footer-container__link {
+  &--html-academy {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 }
