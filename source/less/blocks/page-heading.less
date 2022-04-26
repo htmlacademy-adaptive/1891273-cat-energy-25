@@ -13,11 +13,25 @@
     padding-bottom: 49px;
     border-top: 1px solid @color-basic-grey;
     border-bottom: 1px solid @color-basic-grey;
+
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      text-align: start;
+      margin-left: @tablet-margin;
+      border: none;
+      padding: 64px 0 0 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: @desktop-margin;
+    }
   }
 
   &--index {
     color: @color-white;
     padding-bottom: 25px;
+
     @media (min-width: @tablet-width) {
       color: @color-black;
       font-size: 60px;
@@ -26,6 +40,10 @@
       text-align: start;
       margin-left: 87px;
       padding: 25px 0 0 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
     }
   }
 }

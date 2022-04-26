@@ -7,7 +7,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--index">
       <span class="visually-hidden">логотип</span>
       <a class="main-header__link link-logo" href="#">
         <h2 class="visually-hidden">Ссылка-логотип</h2>
@@ -138,15 +138,15 @@
         </div>
       </a>
       <div class="main-header__toggle">
-        <ul class="main-header__list site-list">
+        <ul class="main-header__list site-list main-header__list--index">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--acrive" href="#">главная</a>
+            <a class="site-list__link site-list__link--index site-list__link--acrive" href="#">главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="catalog.html">каталог продукции</a>
+            <a class="site-list__link site-list__link--index" href="catalog.html">каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="form.html">подбор программы</a>
+            <a class="site-list__link site-list__link--index" href="form.html">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -157,6 +157,7 @@
         <span class="promo__intro">Занялся собой? Займись котом!</span>
         <img class="promo__image" src="/img/foto-cat-energy-chicken.png" width="280" height="270" alt="фото питания с курицей.">
         <img class="promo__image-tablet" src="/img/foto-cat-energy-promo-tablet.jpeg" width="709" height="609" alt="фото питания с курицей.">
+        <img class="promo__image-desctop" src="/img/foto-cat-energy-promo-desctop.png" width="552" height="499" alt="фото питания с курицей.">
         <a class="promo__button promo__button--top" href="form.html">Подобрать программу</a>
       </section>
       <section class="catalogs">
@@ -165,6 +166,7 @@
           <li class="catalogs__item catalog">
             <img class="catalog__icon catalog__icon--cat-skinny" src="/img/cat_skinny.png" width="50" height="53" alt="иконка похудевший кот.">
             <img class="catalog__icon catalog__icon--cat-skinny-tablet" src="/img/cat_skinny-tablet.png" width="200" height="211" alt="иконка похудевший кот.">
+            <img class="catalog__icon catalog__icon--cat-skinny-desktop" src="/img/cat_skinny-desktop.png" width="100" height="106" alt="иконка похудевший кот.">
             <h3 class="catalog__heading">Похудение</h3>
             <p class="catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="catalog__link link-details-catalog" href="catalog.html">
@@ -179,6 +181,7 @@
           <li class="catalogs__item catalog">
             <img class="catalog__icon catalog__icon--cat-sport" src="/img/cat_sport.png" width="67" height="50" alt="иконка спортивный кот.">
             <img class="catalog__icon catalog__icon--cat-sport-tablet" src="/img/cat_sport-tablet.png" width="268" height="200" alt="иконка спортивный кот.">
+            <img class="catalog__icon catalog__icon--cat-sport-desktop" src="/img/cat_sport-desktop.png" width="134" height="100" alt="иконка спортивный кот.">
             <h3 class="catalog__heading">Набор массы</h3>
             <p class="catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="catalog__link link-details-catalog" href="catalog.html">
@@ -235,26 +238,30 @@
             <div class="slider-client__item slider-client__item--hidden">
               <img class="our-client__image" src="../img/skinny-cat-foto.png" width="280" height="232" alt="фото клиента после.">
             </div>
-          </div>
-          <div class="slider-client__control control-slide">
-            <span class="control-slide__title control-slide__title--before">Было</span>
-            <div class="control-slide__wraper">
-              <button class="control-slide__button control-slide__button--before">
-                <span class="visually-hidden">Кнопка до.</span>
-              </button>
-              <button class="control-slide__button control-slide__button--after">
-                <span class="visually-hidden">Кнопка после.</span>
-              </button>
+            <div class="slider-client__control control-slide">
+              <span class="control-slide__title control-slide__title--before">Было</span>
+              <div class="control-slide__wraper">
+                <button class="control-slide__button control-slide__button--before">
+                  <span class="visually-hidden">Кнопка до.</span>
+                </button>
+                <button class="control-slide__button control-slide__button--after">
+                  <span class="visually-hidden">Кнопка после.</span>
+                </button>
+              </div>
+              <span class="control-slide__title control-slide__title--after">Стало</span>
             </div>
-            <span class="control-slide__title control-slide__title--after">Стало</span>
           </div>
         </div>
       </section>
       <section class="location location--background-index">
         <h2 class="visually-hidden">местоположение</h2>
-        <span class="location__invitation">Приглашаем к сотрудничеству дилеров!</span>
-        <span class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <div class="location__discription">
+          <span class="location__invitation">Приглашаем к сотрудничеству дилеров!</span>
+          <span class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        </div>
         <img class="location__image" src="../img/location.jpeg" width="320" height="362" alt="карта с местоположением.">
+        <img class="location__image-tablet" src="/img/location-tablet.jpeg" width="768" height="400" alt="карта с местоположением.">
+        <img class="location__image-desktop" src="/img/location-desktop.jpeg" width="1440" height="400" alt="карта с местоположением.">
       </section>
     </main>
     <footer class="footer-container">

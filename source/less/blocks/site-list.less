@@ -7,6 +7,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: @desktop-margin;
+  }
 }
 
 .site-list__item {
@@ -37,5 +41,23 @@
     margin-left: 35px;
     height: 36px;
     display: block;
+  }
+
+  &--index {
+    @media (min-width: @desktop-width) {
+      color: @color-white;
+
+      &:hover {
+        color: @color-white-opacity-2;
+      }
+
+      &:focus {
+        outline: 1px solid @color-white;
+      }
+
+      &:active {
+        color: @color-white-opacity;
+      }
+    }
   }
 }

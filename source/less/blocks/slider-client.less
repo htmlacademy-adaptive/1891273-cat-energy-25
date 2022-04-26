@@ -1,6 +1,5 @@
 .slider-client {
   @media (min-width: @tablet-width) {
-    background-color: @color-basic-grey-dark;
     margin: 0;
   }
 }
@@ -10,9 +9,28 @@
     margin: 0;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .slider-client__wrapper {
   margin-top: 40px;
   margin-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 110px;
+    top: 0;
+  }
+}
+
+.slider-client__control {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 50%;
+  }
 }

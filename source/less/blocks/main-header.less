@@ -14,6 +14,7 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -22,9 +23,17 @@
     justify-content: space-between;
     margin-right: @tablet-margin;
   }
+
+  &--index {
+    @media (min-width: @desktop-width) {
+      background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
+      margin: 0;
+    }
+  }
 }
 .main-header__link {
   margin-left: @basic-margin;
+
   @media (min-width: @tablet-width) {
     margin-left: @tablet-margin;
   }
@@ -99,5 +108,15 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    margin-left: @desktop-margin;
+  }
+}
+
+.main-header__list {
+  &--index {
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+      background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
+    }
   }
 }

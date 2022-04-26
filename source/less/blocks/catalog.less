@@ -33,6 +33,10 @@
       right: 62px;
       top: 81px;
     }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   &--cat-sport-tablet {
@@ -45,6 +49,38 @@
       position: absolute;
       right: 28px;
       top: 91px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--cat-skinny-desktop {
+    @media (min-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  &--cat-sport-desktop {
+    @media (min-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
     }
   }
 }
