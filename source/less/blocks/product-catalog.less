@@ -26,12 +26,16 @@
   border-bottom: 1px solid @color-basic-grey;
   padding-top: 8px;
   padding-bottom: 11px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 140px 140px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     background-color: @color-basic-grey-light;
   }
+}
+
+.product-catalog__button {
+  grid-column: 1/-1;
 }

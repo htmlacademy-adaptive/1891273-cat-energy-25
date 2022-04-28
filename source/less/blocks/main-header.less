@@ -19,15 +19,14 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    display: flex;
-    justify-content: space-between;
-    margin-right: @tablet-margin;
+    box-sizing: border-box;
   }
 
   &--index {
     @media (min-width: @desktop-width) {
       background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
       margin: 0;
+      padding: 0;
     }
   }
 }
@@ -51,23 +50,6 @@
 
   @media (min-width: @tablet-width) {
     display: none;
-  }
-}
-
-.main-header__wrapper {
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: @basic-margin;
-  margin-right: @basic-margin;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 174px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
   }
 }
 
@@ -112,7 +94,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: @desktop-margin;
   }
 }
 
@@ -120,7 +101,22 @@
   &--index {
     @media (min-width: @desktop-width) {
       margin-top: 0;
-      background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
+      background: url("/img/background-cat-desctop.jpeg") no-repeat -20px top;
     }
+  }
+}
+
+.main-header__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: @tablet-margin;
+    padding-left: @tablet-margin;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: @desktop-margin;
+    padding-left: @desktop-margin;
   }
 }

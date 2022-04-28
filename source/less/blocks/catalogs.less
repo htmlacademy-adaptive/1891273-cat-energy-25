@@ -3,6 +3,11 @@
   padding: 0 @basic-margin 0 @basic-margin;
   list-style-type: none;
 
+  @media (min-width: @tablet-width) {
+    padding-left: @tablet-margin;
+    padding-right: @tablet-margin;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;

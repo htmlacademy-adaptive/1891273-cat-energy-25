@@ -1,6 +1,5 @@
 .additional-catalog {
   @media (min-width: @desktop-width) {
-    margin-left: @desktop-margin;
     display: grid;
     grid-template-columns: 896px 245px;
     column-gap: 79px;
@@ -12,11 +11,13 @@
   font-size: 24px;
   line-height: 24px;
   margin-left: @basic-margin;
+  margin-right: @basic-margin;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 25px;
   padding-bottom: 36px;
   border-bottom: 1px solid @color-basic-grey-dark;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -28,6 +29,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 1/-1;
     margin: 0;
+    padding-left: @desktop-margin;
   }
 }
 
@@ -43,7 +45,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin-left: @desktop-margin;
+    margin-right: @desktop-margin;
+    padding: 0;
   }
 }
 

@@ -1,6 +1,14 @@
-.footer-container {
+.footer-container__link {
+  &--html-academy {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.footer-container__wrapper {
   margin: 0;
-  padding: 0 @basic-margin 0 @basic-margin;
   background-color: @color-basic-grey-light;
 
   @media (min-width: @tablet-width) {
@@ -11,14 +19,6 @@
   @media (min-width: @desktop-width) {
     padding-left: @desktop-margin;
     padding-right: @desktop-margin;
-  }
-}
-
-.footer-container__link {
-  &--html-academy {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    box-sizing: border-box;
   }
 }
