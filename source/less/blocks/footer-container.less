@@ -10,8 +10,13 @@
 .footer-container__wrapper {
   margin: 0;
   background-color: @color-basic-grey-light;
+  padding-left: @basic-margin;
+  padding-right: @basic-margin;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    padding-left: @tablet-margin;
+    padding-right: @tablet-margin;
     display: flex;
     justify-content: space-between;
   }

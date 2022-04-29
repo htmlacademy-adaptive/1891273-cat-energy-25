@@ -1,23 +1,12 @@
 .catalogs__list {
   margin: 0;
-  padding: 0 @basic-margin 0 @basic-margin;
+  padding: 0;
   list-style-type: none;
-
-  @media (min-width: @tablet-width) {
-    padding-left: @tablet-margin;
-    padding-right: @tablet-margin;
-  }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 80px;
-    margin-left: @desktop-margin;
-    margin-right: @desktop-margin;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0;
   }
 }
 
@@ -26,4 +15,20 @@
   font-family: "Oswald", sans-serif;
   color: @color-black;
   margin-top: 20px;
+}
+
+.catalogs__wrapper {
+  padding-left: @basic-margin;
+  padding-right: @basic-margin;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: @tablet-margin;
+    padding-right: @tablet-margin;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: @desktop-margin;
+    padding-right: @desktop-margin;
+  }
 }
