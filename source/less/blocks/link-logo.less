@@ -1,6 +1,19 @@
 .link-logo {
   text-decoration: none;
-  margin: 0;
+  width: 280px;
+  display: block;
+  width: 191px;
+  margin-left: @basic-margin;
+  margin-right: @basic-margin;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 174px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   &:hover {
     fill-opacity: 80%;
@@ -12,22 +25,5 @@
 
   &:active {
     fill-opacity: 60%;
-  }
-}
-
-.link-logo__wrapper {
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: @basic-margin;
-  margin-right: @basic-margin;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 174px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
   }
 }

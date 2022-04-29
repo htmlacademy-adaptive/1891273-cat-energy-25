@@ -43,6 +43,7 @@
   border: none;
   cursor: pointer;
   background-color: @color-white;
+  margin-right: @basic-margin;
 
   &:focus {
     outline: 1px solid @color-green;
@@ -107,6 +108,10 @@
 }
 
 .main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -118,5 +123,17 @@
   @media (min-width: @desktop-width) {
     padding-right: @desktop-margin;
     padding-left: @desktop-margin;
+  }
+}
+
+.main-header__toggle {
+  width: @mobile-width-only;
+
+  @media (min-width: @tablet-width) {
+    width: 450px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
   }
 }
