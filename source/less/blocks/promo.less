@@ -3,6 +3,25 @@
   src: url("/fonts/oswaldregular.woff");
 }
 
+.promo__wrapper {
+  background: url("/img/background-cat.jpeg") no-repeat @color-green;
+  background-color: @color-white;
+  background-position: center top;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("/img/background-cat-desctop.jpeg") no-repeat right -65px;
+    min-height: 585px;
+    position: relative;
+  }
+}
+
 .promo__intro {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
@@ -59,7 +78,7 @@
   @media (min-width: @desktop-width) {
     display: block;
     position: absolute;
-    left: 600px;
+    right: 330px;
   }
 }
 
@@ -105,26 +124,5 @@
     @media (min-width: @desktop-width) {
       margin-left: 0;
     }
-  }
-}
-
-.promo__wrapper {
-  background: url("/img/background-cat.jpeg") no-repeat @color-green;
-  background-color: @color-white;
-
-  @media (min-width: @tablet-width) {
-    background: none;
-    display: flex;
-    flex-direction: column;
-    padding-left: @tablet-margin;
-    padding-right: @tablet-margin;
-    box-sizing: border-box;
-  }
-
-  @media (min-width: @desktop-width) {
-    background: url("/img/background-cat-desctop.jpeg") no-repeat right -65px;
-    min-height: 585px;
-    padding-left: @desktop-margin;
-    padding-right: @desktop-margin;
   }
 }

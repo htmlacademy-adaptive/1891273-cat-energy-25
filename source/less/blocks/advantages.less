@@ -1,21 +1,23 @@
 .advantages__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+  @media (min-width: @mobile-width-only) {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;
-    padding-left: @tablet-margin;
-    padding-right:  @tablet-margin;
   }
 }
 
 .advantages__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @media (min-width: @mobile-width-only) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -64,10 +66,12 @@
 }
 
 .advantages__description {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: @color-special-grey;
+  @media (min-width: @mobile-width-only) {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: @color-special-grey;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -76,19 +80,9 @@
 }
 
 .advantages__wrapper {
-  margin-top: 20px;
-  margin-bottom: 49px;
-  padding-left: @basic-margin;
-  padding-right: @basic-margin;
-  box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    padding-left: @tablet-margin;
-    padding-right: @tablet-margin;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: @desktop-margin;
-    padding-right: @desktop-margin;
+  @media (min-width: @mobile-width-only) {
+    margin-top: 20px;
+    margin-bottom: 49px;
+    box-sizing: border-box;
   }
 }

@@ -6,20 +6,11 @@
   margin: -1px;
 }
 
-.main-header__link {
-  margin-left: @basic-margin;
-
-  @media (min-width: @tablet-width) {
-    margin-left: @tablet-margin;
-  }
-}
-
 .main-header__button {
   padding: 0;
   border: none;
   cursor: pointer;
   background-color: @color-white;
-  margin-right: @basic-margin;
 
   &:focus {
     outline: 1px solid @color-green;
@@ -78,7 +69,7 @@
   &--index {
     @media (min-width: @desktop-width) {
       margin-top: 0;
-      background: url("/img/background-cat-desctop.jpeg") no-repeat -20px top;
+      background-color: @color-opacity;
     }
   }
 }
@@ -97,23 +88,14 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    padding-right: @tablet-margin;
-    padding-left: @tablet-margin;font-size: 18px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-right: @desktop-margin;
-    padding-left: @desktop-margin;
   }
 
   &--index {
     @media (min-width: @desktop-width) {
       background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
-      margin: 0;
-      padding: 0;
     }
   }
 }
@@ -127,5 +109,6 @@
 
   @media (min-width: @desktop-width) {
     width: 480px;
+    background-color: @color-opacity;
   }
 }
