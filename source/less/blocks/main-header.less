@@ -7,14 +7,29 @@
 }
 
 .main-header__button {
+  width: 65px;
+  height: 65px;
   padding: 0;
   border: none;
   cursor: pointer;
   background-color: @color-white;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -65px;
+  order: 2;
 
   &:focus {
     outline: 1px solid @color-green;
   }
+
+  // &--open {
+
+  // }
+
+  // &--close {
+
+  // }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -68,9 +83,17 @@
 .main-header__list {
   &--index {
     @media (min-width: @desktop-width) {
-      margin-top: 0;
       background-color: @color-opacity;
+      z-index: 2;
     }
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
   }
 }
 
@@ -92,24 +115,41 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    width: 78px;
   }
 
-  &--index {
-    @media (min-width: @desktop-width) {
-      background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
-    }
+  @media (min-width: @desktop-width) {
+    min-height: 108px;
+    background-color: @color-opacity;
   }
 }
 
 .main-header__toggle {
   width: @mobile-width-only;
+  position: relative;
+
+  &--closed .main-header__button--close {
+    display: none;
+  }
+
+  &--opened .main-header__button--open {
+    display: none;
+  }
+
+  &--nojs .main-header__button {
+    display: none;
+  }
+
+  &--nojs .main-header__list {
+    position: static;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 450px;
+    width: 440px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 480px;
+    width: 500px;
     background-color: @color-opacity;
   }
 }
