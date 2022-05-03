@@ -1,11 +1,17 @@
 .form-container {
-  margin-left: @basic-margin;
-  margin-right: @basic-margin;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: @color-special-grey;
   text-transform: uppercase;
+}
+
+.form-container__section {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 561px 561px;
+    column-gap: 81px;
+  }
 }
 
 .form-container__intro {
@@ -16,10 +22,32 @@
   margin-top: 37px;
   margin-bottom: 39px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 39px;
+    display: block;
+    width: 323px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-column: 1/-1;
+  }
 }
 
 .form-container__group {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 41px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .form-container__title {
@@ -27,6 +55,11 @@
   font-size: 24px;
   line-height: 26px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form-container__submit {
@@ -51,6 +84,14 @@
     background-color: @color-green-dark;
     color: @color-white-opacity;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .form-container__note {
@@ -59,4 +100,20 @@
   line-height: 16px;
   color: @color-black;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 39px;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    margin: 0;
+    right: 410px;
+    bottom: 5px;
+  }
+}
+
+.form-container__wrapper {
+  position: relative;
 }

@@ -3,6 +3,16 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  &--index {
+    @media (min-width: @desktop-width) {
+      background: url("/img/background-cat-desctop.jpeg") no-repeat right top;
+    }
+  }
 }
 
 .site-list__item {
@@ -10,13 +20,12 @@
   min-height: 66px;
   text-align: center;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .site-list__link {
   text-decoration: none;
   color: @color-black;
-  padding-top: 22px;
-  padding-bottom: 24px;
   margin: auto;
 
   &:hover {
@@ -31,7 +40,27 @@
     color: @color-black-opacity;
   }
 
-  &--acrive {
-    border-bottom: 2px solid @color-green;
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+    height: 36px;
+    display: block;
+  }
+
+  &--index {
+    @media (min-width: @desktop-width) {
+      color: @color-white;
+
+      &:hover {
+        color: @color-white-opacity-2;
+      }
+
+      &:focus {
+        outline: 1px solid @color-white;
+      }
+
+      &:active {
+        color: @color-white-opacity;
+      }
+    }
   }
 }

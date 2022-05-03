@@ -1,5 +1,16 @@
 .link-logo {
   text-decoration: none;
+  display: block;
+  width: 191px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 174px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   &:hover {
     fill-opacity: 80%;

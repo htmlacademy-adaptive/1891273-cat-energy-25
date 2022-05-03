@@ -1,7 +1,59 @@
 .location {
+  min-height: 474px;
+  background-image: url("/img/location.jpeg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    min-height: 599px;
+    background-image: url("/img/location-tablet.jpeg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 400px;
+    background-image: url("/img/location-desktop.jpeg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.location__wrapper {
   margin: 0;
   padding: 0;
   background-color: @color-basic-grey-light;
+  display: flex;
+  flex-direction: column;
+
+  &--background-index {
+    background-color: @color-white;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.location__discription {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    height: 198px;
+    position: absolute;
+    background-color: @color-white;
+    top: 95px;
+  }
 }
 
 .location__invitation {
@@ -10,7 +62,11 @@
   line-height: 20px;
   text-transform: uppercase;
   display: block;
-  margin-left: @basic-margin;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    margin-left: 70px;
+  }
 }
 
 .location__address {
@@ -18,5 +74,9 @@
   font-size: 14px;
   line-height: 20px;
   color: @color-special-grey;
-  margin-right: @basic-margin;
+
+  @media (min-width: @tablet-width) {
+    width: 172px;
+    margin-right: 70px;
+  }
 }

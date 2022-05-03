@@ -1,0 +1,116 @@
+.catalog {
+  position: relative;
+  min-height: 372px;
+}
+
+.catalog__icon {
+  &--cat-skinny {
+    margin-top: 21px;
+    margin-left: 22px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--cat-sport {
+    margin-top: 24px;
+    margin-left: 13px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--cat-skinny-tablet {
+    @media (min-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      right: 62px;
+      top: 81px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--cat-sport-tablet {
+    @media (min-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      right: 28px;
+      top: 91px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--cat-skinny-desktop {
+    @media (min-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  &--cat-sport-desktop {
+    @media (min-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.catalog__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-special-grey;
+  margin-left: 20px;
+  margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+}
+
+.catalog__link {
+  margin: 15px auto 18px 19px;
+}

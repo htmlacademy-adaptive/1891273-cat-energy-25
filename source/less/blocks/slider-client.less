@@ -1,4 +1,30 @@
+.slider-client {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    position: relative;
+  }
+}
+
+.slider-client__item {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .slider-client__wrapper {
-  margin-top: 40px;
-  margin-bottom: 15px;
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 110px;
+    bottom: 0;
+  }
+}
+
+.slider-client__control {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 50%;
+  }
 }

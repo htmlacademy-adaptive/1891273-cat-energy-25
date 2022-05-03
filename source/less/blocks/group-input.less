@@ -2,6 +2,36 @@
   &--main-form {
     border-bottom: 1px solid @color-basic-grey;
   }
+
+  &--program-selection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--additional {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 40px 242px 40px 243px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-column: 1/-1;
+      display: flex;
+    }
+  }
+
+  &--contact-details {
+    @media (min-width: @desktop-width) {
+      grid-column: 1/-1;
+      display: flex;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: @desktop-width) {
+      grid-column: 1/-1;
+    }
+  }
 }
 
 .group-input__item {
@@ -32,5 +62,12 @@
 
   &.group-input__input--error {
     border: 1px solid @color-error;
+  }
+
+  &--textarea {
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding: 0;
+    }
   }
 }

@@ -1,43 +1,88 @@
+.additional-catalog__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    column-gap: 79px;
+  }
+}
+
 .additional-catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  margin-left: @basic-margin;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 25px;
-  padding-bottom: 36px;
-  border-bottom: 1px solid @color-basic-grey-dark;
+  @media (min-width: @mobile-width-only) {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid @color-basic-grey-dark;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/-1;
+    margin: 0;
+  }
 }
 
 .additional-catalog__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 20px 0 20px;
+  @media (min-width: @mobile-width-only) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px 0 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .additional-catalog__item {
-  padding: 13px 0 19px 0;
-  border-bottom: 1px solid @color-basic-grey-dark;
+  @media (min-width: @mobile-width-only) {
+    padding: 13px 0 19px 0;
+    border-bottom: 1px solid @color-basic-grey-dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @color-basic-grey-dark;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .additional-product__name {
-  margin: 0;
-  padding: 0;
-  color: @color-special-grey-dark;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  padding-bottom: 13px;
+  @media (min-width: @mobile-width-only) {
+    margin: 0;
+    padding: 0;
+    color: @color-special-grey-dark;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
 }
 
 .additional-product__criteria,
 .additional-product__value {
-  color: @color-special-grey;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  padding-bottom: 15px;
-  display: block;
+  @media (min-width: @mobile-width-only) {
+    color: @color-special-grey;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 15px;
+    display: block;
+  }
 }
