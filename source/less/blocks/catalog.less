@@ -1,6 +1,9 @@
 .catalog {
   position: relative;
-  min-height: 372px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 372px;
+  }
 }
 
 .catalog__icon {
@@ -90,11 +93,23 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin: 0;
+
+  @media (min-width: @mobile-width-only) {
+    position: absolute;
+    left: 91px;
+    top: 30px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    font-weight: normal;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-top: 77px;
+    padding-left: 53px;
   }
 }
 
@@ -105,12 +120,22 @@
   color: @color-special-grey;
   margin-left: 20px;
   margin-top: 22px;
+  margin-right: 33px;
 
   @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     width: 340px;
+    margin-top: 24px;
+    margin-left: 52px;
   }
 }
 
 .catalog__link {
-  margin: 15px auto 18px 19px;
+  margin: 15px auto 0 19px;
+
+  @media (min-width: @tablet-width) {
+    margin: 52px auto 0 52px;
+    padding: 0;
+  }
 }

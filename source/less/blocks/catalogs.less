@@ -15,4 +15,10 @@
   font-family: "Oswald", sans-serif;
   color: @color-black;
   margin-top: 20px;
+
+  &:not(:first-child) {
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
+    }
+  }
 }

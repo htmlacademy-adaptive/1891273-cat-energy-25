@@ -23,13 +23,17 @@
     outline: 1px solid @color-green;
   }
 
-  // &--open {
+  &--open {
+    background-image: url(/img/icon-menu-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-  // }
-
-  // &--close {
-
-  // }
+  &--close {
+    background-image: url(/img/icon-menu-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -94,7 +98,14 @@
 
   &--opened {
     display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
   }
+}
+
+.main-header__toggle--nojs .main-header__list {
+  position: static;
 }
 
 .main-header__wrapper {

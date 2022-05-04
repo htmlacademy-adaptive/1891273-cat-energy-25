@@ -48,6 +48,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: @tablet-width) {
+
+  }
+
   @media (min-width: @desktop-width) {
     width: 565px;
     height: 198px;
@@ -63,10 +67,16 @@
   line-height: 20px;
   text-transform: uppercase;
   display: block;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     width: 160px;
-    margin-left: 70px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 59px;
+    padding-bottom: 56px;
   }
 }
 
@@ -75,9 +85,15 @@
   font-size: 14px;
   line-height: 20px;
   color: @color-special-grey;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     width: 172px;
-    margin-right: 70px;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }

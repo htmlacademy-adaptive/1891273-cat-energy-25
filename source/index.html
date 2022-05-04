@@ -130,19 +130,6 @@
         <div class="main-header__toggle main-header__toggle--nojs">
           <button class="main-header__button main-header__button--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="main-header__icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title class="visually-hidden">Картинка кнопки меню.</title>
-              <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-              <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-              <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-            </svg>
-          </button>
-          <button class="main-header__button main-header__button--close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
-            <svg  class="main-header__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
-              <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
-            </svg>
           </button>
           <ul class="main-header__list main-header__list--opened site-list site-list--index">
             <li class="site-list__item site-list__item--active">
@@ -224,7 +211,7 @@
             </li>
             <li class="advantages__item advantages__item--four">
               <img class="advantages__icon" src="/img/icon-clock.svg" width="60" height="60" alt="иконка будильник.">
-              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -245,17 +232,19 @@
           </div>
           <span class="our-client__expenses">Затраты на питание: 15 000 РУБ. </span>
           <div class="our-client__slider slider-client">
-            <div class="slider-client__wrapper">
-              <div class="slider-client__item slider-client__item--hidden">
-                <img class="our-client__image" src="../img/fat-cat.png" width="280" height="232" alt="фото клиента до.">
-              </div>
-              <div class="slider-client__item slider-client__item--hidden">
-                <img class="our-client__image" src="../img/skinny-cat-foto.png" width="280" height="232" alt="фото клиента после.">
-              </div>
-              <div class="slider-client__control control-slide">
+            <div class="slider-client__item slider-client__item--before">
+              <img class="our-client__image" src="../img/fat-cat.png" width="280" height="232" alt="фото клиента до.">
+            </div>
+            <div class="slider-client__item slider-client__item--after">
+              <img class="our-client__image" src="../img/skinny-cat-foto.png" width="280" height="232" alt="фото клиента после.">
+            </div>
+            <div class="slider-client__item slider-client__item--double-cat">
+              <img class="our-client__image" src="../img/double-cat.png" width="592" height="511" alt="фото клиента после.">
+            </div>
+            <div class="slider-client__control control-slide control-slide--mobile">
               <span class="control-slide__title control-slide__title--before">Было</span>
-              <div class="control-slide__wraper">
-                <button class="control-slide__button control-slide__button--before">
+              <div class="control-slide__wrapper">
+                <button class="control-slide__button control-slide__button--before control-slide__button--active">
                   <span class="visually-hidden">Кнопка до.</span>
                 </button>
                 <button class="control-slide__button control-slide__button--after">
@@ -263,7 +252,12 @@
                 </button>
               </div>
               <span class="control-slide__title control-slide__title--after">Стало</span>
-              </div>
+            </div>
+            <div class="slider-client__control control-slide control-slide--tablet">
+              <span class="control-slide__title control-slide__title--before">Было</span>
+              <input class="control-slide__input" type="range" list="tickmarks" id="volume" name="volume" min="0" max="592" step="1">
+              <label class="visually-hidden" for="volume">Volume</label>
+              <span class="control-slide__title control-slide__title--after">Стало</span>
             </div>
           </div>
         </div>
