@@ -3,20 +3,37 @@
   src: url("/fonts/oswaldregular.woff");
 }
 
+.promo {
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 50%;
+      min-height: 694px;
+      background-color: @color-green-dark;
+      background-image: url("/img/background-cat-desctop.jpeg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+}
+
 .promo__wrapper {
-  background: url("/img/background-cat.jpeg") no-repeat @color-green;
-  background-color: @color-white;
-  background-position: center top;
+  background-image: url("/img/background-cat.jpeg");
+  background-repeat: no-repeat;
+  position: top;
 
   @media (min-width: @tablet-width) {
-    background: none;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    background: none;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("/img/background-cat-desctop.jpeg") no-repeat right -65px;
     min-height: 585px;
     position: relative;
   }

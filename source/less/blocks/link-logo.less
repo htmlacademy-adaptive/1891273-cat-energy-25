@@ -1,15 +1,24 @@
 .link-logo {
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 191px;
+  height: 61px;
+  padding-top: 10px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     display: block;
     width: 174px;
+    padding-top: 24px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
+    display: block;
     margin: 0;
+    width: 220px;
+    height: 59px;
+    padding-top: 49px;
   }
 
   &:hover {
