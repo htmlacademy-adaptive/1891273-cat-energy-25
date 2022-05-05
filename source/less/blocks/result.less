@@ -1,4 +1,13 @@
 .result {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 162px 162px;
+    column-gap: 52px;
+  }
+
   @media (min-width: @desktop-width) {
     margin: 0;
   }
@@ -9,8 +18,23 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
   color: @color-black;
   margin-top: 6px;
+  width: 124px;
+  min-height: 56px;
+  display: block;
+  border: 1px solid @color-basic-grey-dark;
+  border-radius: 3px;
+  padding-top: 14px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    min-height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result__description {
@@ -18,6 +42,24 @@
   font-size: 12px;
   line-height: 12px;
   color: @color-special-grey;
+  width: 57px;
+  display: block;
+  margin: -10px auto 0 auto;
+  background-color: @color-basic-grey-light;
+  padding: 0 15px 0 15px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-white;
+    width: 127px;
+    padding: 0 7px 0 7px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-basic-grey-light;
+  }
 }
 
 .result__block {

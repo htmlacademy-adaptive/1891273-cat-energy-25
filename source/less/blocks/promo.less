@@ -31,6 +31,7 @@
     flex-direction: column;
     box-sizing: border-box;
     background: none;
+    min-height: 872px;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,8 +44,9 @@
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
   color: @color-white;
+  text-transform: uppercase;
+  padding-left: 40px;
 
   @media (min-width: @tablet-width) {
     color: @color-black;
@@ -53,10 +55,15 @@
     display: block;
     box-sizing: border-box;
     padding-left: 89px;
+    padding-top: 41px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
+    padding-left: 80px;
+    padding-top: 40px;
   }
 }
 
@@ -76,6 +83,8 @@
   @media (min-width: @tablet-width) {
     display: block;
     margin: auto;
+    position: relative;
+    bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,7 +104,8 @@
   @media (min-width: @desktop-width) {
     display: block;
     position: absolute;
-    right: 330px;
+    right: 220px;
+    top: 29px;
   }
 }
 
@@ -110,8 +120,10 @@
   display: block;
   margin: 0 auto 0 auto;
   text-align: center;
+  padding-top: 7px;
   width: 280px;
   min-height: 40px;
+  box-sizing: border-box;
 
   &:hover {
     background-color: @color-green-dark;
@@ -129,16 +141,20 @@
   &--top {
     @media (min-width: @tablet-width) {
       position: absolute;
-      top: 292px;
+      top: 370px;
       margin-left: 90px;
       width: 244px;
       height: 54px;
       font-size: 20px;
       line-height: 20px;
+      font-weight: normal;
+      padding-top: 14px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-left: 0;
+      margin-left: 80px;
+      margin-top: 52px;
+      top: 290px;
     }
   }
 }

@@ -13,3 +13,13 @@ mainButton.addEventListener("click", function () {
     mainList.classList.remove("main-header__list--opened");
   }
 });
+
+mainButton.addEventListener("click", function () {
+  if (mainButton.classList.contains("main-header__button--close")) {
+    mainButton.classList.remove("main-header__button--close");
+    mainButton.classList.add("main-header__button--open");
+  } else {
+    mainButton.classList.add("main-header__button--close");
+    mainButton.classList.remove("main-header__button--open");
+  }
+});
