@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     min-height: 372px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 374px;
+  }
 }
 
 .catalog__icon {
@@ -70,6 +74,8 @@
 
     @media (min-width: @desktop-width) {
       display: block;
+      margin-top: 41px;
+      margin-left: 52px;
     }
   }
 
@@ -84,6 +90,8 @@
 
     @media (min-width: @desktop-width) {
       display: block;
+      margin-top: 47px;
+      margin-left: 33px;
     }
   }
 }
@@ -111,6 +119,14 @@
     padding-top: 77px;
     padding-left: 53px;
   }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 77px;
+    left: 214px;
+    padding: 0;
+  }
 }
 
 .catalog__description {
@@ -129,6 +145,11 @@
     margin-top: 24px;
     margin-left: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    margin-top: 39px;
+  }
 }
 
 .catalog__link {
@@ -137,5 +158,9 @@
   @media (min-width: @tablet-width) {
     margin: 52px auto 0 52px;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 23px auto 0 52px;
   }
 }
