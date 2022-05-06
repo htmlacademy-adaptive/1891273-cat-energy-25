@@ -24,13 +24,13 @@
   }
 
   &--open {
-    background-image: url("/img/icon-menu-open.svg");
+    background-image: url("/img/icon-menu-close.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--close {
-    background-image: url("/img/icon-menu-close.svg");
+    background-image: url("/img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -136,8 +136,9 @@
 }
 
 .main-header__toggle {
-  width: @mobile-width-only;
+  width: 100%;
   position: relative;
+  background-color: @color-white;
 
   &--closed .main-header__button--close {
     display: none;

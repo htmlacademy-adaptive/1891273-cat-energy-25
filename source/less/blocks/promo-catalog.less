@@ -1,5 +1,4 @@
 .promo-catalog {
-  margin: 35px 0 35px 0;
   padding-top: 59px;
 
   @media (min-width: @mobile-width-only) {
@@ -11,6 +10,7 @@
     min-height: 200px;
     padding: 0;
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,6 +18,8 @@
     min-height: 289px;
     background: url("/img/cat-carrier-desktop.jpeg") no-repeat @color-green;
     margin: 0;
+    margin-bottom: 86px;
+    flex-direction: column;
   }
 }
 
@@ -26,6 +28,14 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-top: 57px;
+    margin-left: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -40,5 +50,17 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    width: 161px;
+    text-align: start;
+    margin-top: 71px;
+    margin-right: 124px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 42px;
+    margin-top: auto;
   }
 }

@@ -1,6 +1,85 @@
+.additional-product {
+  border-bottom: 1px solid @color-basic-grey-dark;
+
+  &:first-child {
+    border-top: 1px solid @color-basic-grey-dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @color-basic-grey-dark;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 325px 326px 244px;
+    padding-top: 15px;
+    padding-bottom: 17px;;
+  }
+}
+
 .additional-product__discription {
   @media (min-width: @mobile-width-only) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.additional-product__name {
+  @media (min-width: @mobile-width-only) {
+    margin: 0;
+    padding: 0;
+    color: @color-special-grey-dark;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 20p;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.additional-product__criteria {
+  color: @color-special-grey;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.additional-product__value {
+  color: @color-special-grey;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 15px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 38px;
   }
 }

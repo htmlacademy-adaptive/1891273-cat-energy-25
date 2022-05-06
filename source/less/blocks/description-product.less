@@ -4,12 +4,39 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @color-special-grey-dark;
+  margin-top: 11px;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 34px;
+    margin-bottom: 21px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+    margin-top: 46px;
+    margin-bottom: 22px;
+  }
 }
 
 .description-product__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .description-product__description,
@@ -18,4 +45,64 @@
   color: @color-special-grey;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.description-product__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @color-basic-grey-dark;
+  }
+
+  &--weight {
+    min-height: 8px;
+    padding-bottom: 6px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 16px;
+      padding-bottom: 9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 15px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &--taste {
+    min-height: 12px;
+    padding-bottom: 2px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 20px;
+      padding-top: 5px;
+      padding-bottom: 7px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 18px;
+      padding-top: 6px;
+      padding-bottom: 8px;
+    }
+  }
+
+  &--price {
+    min-height: 16px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 7px;
+      padding-bottom: 9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 14px;
+      padding-top: 7px;
+      padding-bottom: 10px;
+    }
+  }
 }
