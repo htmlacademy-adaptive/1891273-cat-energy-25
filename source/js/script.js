@@ -24,4 +24,3 @@ mainButton.addEventListener("click", function () {
     mainButton.classList.remove("main-header__button--open");
   }
 });
-

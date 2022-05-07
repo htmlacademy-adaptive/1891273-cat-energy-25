@@ -6,6 +6,8 @@
   &--program-selection {
     display: flex;
     flex-direction: column;
+    padding-top: 22px;
+    padding-bottom: 20px;
   }
 
   &--additional {
@@ -41,16 +43,34 @@
   text-transform: uppercase;
   color: @color-special-grey;
   margin-bottom: 13px;
+  min-height: 46px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    min-height: 52px;
+  margin-bottom: 20px;
+  }
 }
 
 .group-input__input {
   border: 1px solid @color-basic-grey-dark;
   margin-left: 15px;
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @color-special-grey;
+  height: 45px;
+  width: 100%;
+  padding-left: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+    padding-left: 19px;
+  }
 
   &:hover {
     border: 1px solid @color-basic-grey-dark;
@@ -70,4 +90,81 @@
       padding: 0;
     }
   }
+
+  &--name {
+    width: 228px;
+
+    @media (min-width: @tablet-width) {
+      width: 567px;
+    }
+  }
+
+  &--weight {
+    width: 191px;
+
+    @media (min-width: @tablet-width) {
+      width: 536px;
+    }
+  }
+
+  &--age {
+    width: 172px;
+
+    @media (min-width: @tablet-width) {
+      width: 497px;
+    }
+  }
+
+  &--program-selection {
+    margin: 0;
+    width: 30px;
+    margin-right: 15px;
+  }
+}
+
+.group-input__meaning {
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 0;
+  position: relative;
+
+  &--program-selection {
+    display: flex;
+    justify-content: start;
+    height: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid @color-basic-grey-dark;
+      border-radius: 50%;
+    }
+  }
+
+  &--program-selection:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+  }
+}
+
+.group-input__input--program-selection:checked .group-input__meaning--program-selection::before {
+  background-image: url("/img/slider-control.svg");
+}
+
+.group-input__input.group-input__input--program-selection {
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.group-input__heading {
+  padding-top: 6px;
+  margin-left: 15px;
 }

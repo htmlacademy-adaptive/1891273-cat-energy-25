@@ -113,25 +113,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: @color-white;
-  color: @color-black;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: normal;
-    width: 78px;
+    min-height: 76px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 108px;
     background-color: @color-opacity;
+    min-height: 108px;
   }
 }
 
@@ -139,6 +131,12 @@
   width: 100%;
   position: relative;
   background-color: @color-white;
+  color: @color-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 
   &--closed .main-header__button--close {
     display: none;
@@ -154,10 +152,21 @@
 
   @media (min-width: @tablet-width) {
     width: 440px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    right: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: auto;
     width: 500px;
     background-color: @color-opacity;
+    min-height: 108px;
+    right: 110px;
+    top: 0;
   }
 }

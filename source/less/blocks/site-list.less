@@ -11,18 +11,21 @@
 
   @media (min-width: @desktop-width) {
     justify-content: end;
+    grid-template-columns: 64px 187px 188px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 68px 208px 202px;
   }
 
   &--index {
     @media (min-width: @desktop-width) {
-      grid-template-columns: 68px 208px 202px;
       background-color: @color-opacity;
     }
   }
 }
 
 .site-list__item {
-  // border-top: 1px solid @color-basic-grey;
   min-height: 66px;
   text-align: center;
   box-sizing: border-box;
@@ -89,6 +92,11 @@
       width: 153px;
       margin-left: 33px;
     }
+
+    &--form {
+      width: 152px;
+      margin-left: 36px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -102,6 +110,11 @@
 
     &--index&--active {
       border-bottom: 2px solid @color-white;
+    }
+
+    &--form {
+      width: 170px;
+      margin-left: 33px;
     }
 
     &:hover {
