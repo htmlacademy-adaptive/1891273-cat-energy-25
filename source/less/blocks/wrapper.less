@@ -1,4 +1,6 @@
 .wrapper {
+  position: relative;
+
   &--heading-form {
     border-top: 1px solid @color-grey;
 
@@ -10,5 +12,40 @@
   &--program-selection {
     border-top: 1px solid @color-basic-grey-dark;
     border-bottom: 1px solid @color-basic-grey-dark;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
+  &--personal-data {
+    border-bottom: 1px solid @color-basic-grey-dark;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
+  &--line {
+    ::before {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 15px;
+      height: 2px;
+      width: 50%;
+      background-color: @color-green;
+      z-index: -1;
+
+      @media (min-width: @tablet-width) {
+        width: 100%;
+        top: 23px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 15px;
+      }
+    }
   }
 }

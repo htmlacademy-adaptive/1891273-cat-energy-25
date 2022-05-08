@@ -5,15 +5,19 @@
   color: @color-special-grey;
   text-transform: uppercase;
   margin-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 66px;
+  }
 }
 
-// .form-container__section {
-//   @media (min-width: @desktop-width) {
-//     display: grid;
-//     grid-template-columns: 561px 561px;
-//     column-gap: 81px;
-//   }
-// }
+.form-container__wrapper {
+  &--page {
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
+  }
+}
 
 .form-container__intro {
   font-family: "Oswald", sans-serif;
@@ -23,6 +27,7 @@
   margin-top: 37px;
   margin-bottom: 39px;
   display: block;
+  color: @color-black;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -47,8 +52,8 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    padding-left: 41px;
-    padding-right: 37px;
+    margin-left: 41px;
+    margin-right: 37px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,27 +61,17 @@
   }
 }
 
-.form-container__title {
-  text-transform: none;
-  font-size: 24px;
-  line-height: 26px;
-  display: block;
-
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
 .form-container__submit {
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   color: @color-white;
   border: none;
   text-transform: uppercase;
   background-color: @color-green;
   text-align: center;
+  min-height: 40px;
+  width: 280px;
 
   &:hover {
     background-color: @color-green-dark;
@@ -93,6 +88,11 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 39px;
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    line-height: auto;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -106,10 +106,18 @@
   line-height: 16px;
   color: @color-black;
   text-transform: none;
+  text-align: center;
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 39px;
+    width: 181px;
     font-size: 16px;
+    margin-left: auto;
+    margin-right: 140px;
+    margin-top: -112px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -118,8 +126,4 @@
     right: 410px;
     bottom: 5px;
   }
-}
-
-.form-container__wrapper {
-  position: relative;
 }
