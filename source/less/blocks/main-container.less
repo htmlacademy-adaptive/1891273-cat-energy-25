@@ -17,6 +17,7 @@
     background-color: @color-white;
     width: 187px;
     padding-right: 14px;
+    position: relative;
 
     @media (min-width: @tablet-width) {
       width: 520px;
@@ -24,6 +25,22 @@
       padding-right: 42px;
       margin-top: 71px;
       margin-bottom: 76px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 0;
+    }
+  }
+
+  &--contact-details&::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      width: 40px;
+      height: 36px;
+      background-color: @color-white;
+      position: absolute;
+      left: -40px;
+      top: -2px;
     }
   }
 
@@ -33,6 +50,7 @@
     background-color: @color-white;
     width: 121px;
     margin-right: 22px;
+    position: relative;
 
     @media (min-width: @tablet-width) {
       width: 182px;
@@ -40,6 +58,23 @@
       padding-right: 38px;
       margin-top: 45px;
       margin-bottom: 76px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 69px;
+      padding-left: 0;
+    }
+  }
+
+  &--textarea::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      width: 40px;
+      height: 36px;
+      background-color: @color-white;
+      position: absolute;
+      left: -40px;
+      top: -2px;
     }
   }
 
@@ -49,6 +84,7 @@
     background-color: @color-white;
     margin-top: 23px;
     margin-bottom: 34px;
+    position: relative;
 
     @media (min-width: @tablet-width) {
       width: 211px;
@@ -56,6 +92,23 @@
       padding-right: 41px;
       margin-top: 65px;
       margin-bottom: 57px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 0;
+      margin-top: 67px;
+    }
+  }
+
+  &--additional::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      width: 40px;
+      height: 36px;
+      background-color: @color-white;
+      position: absolute;
+      left: -40px;
+      top: -2px;
     }
   }
 }

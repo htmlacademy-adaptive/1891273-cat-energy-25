@@ -24,6 +24,15 @@
   text-transform: uppercase;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+
   &::before {
     @media (min-width: @tablet-width) {
       content: "";
@@ -37,9 +46,29 @@
     }
   }
 
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
+  &:hover {
+    @media (min-width: @tablet-width) {
+      border-bottom: 1px solid @color-black-opacity-3;
+      padding-bottom: 2px;
+    }
+  }
+
+  &:focus {
+    @media (min-width: @tablet-width) {
+      outline: 1px solid @color-green;
+    }
+  }
+
+  &:hover&::before {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &:active&::before {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -111,4 +140,17 @@
   cursor: pointer;
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
   position: relative;
+
+  &:hover {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:focus {
+    border: 1px solid @color-green;
+  }
+
+  &:active {
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+    border: 1px solid @color-green;
+  }
 }
