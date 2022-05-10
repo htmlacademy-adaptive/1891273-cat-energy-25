@@ -1,6 +1,7 @@
 let mainList = document.querySelector(".main-header__list");
 let mainButton = document.querySelector(".main-header__button");
 let mainToggle = document.querySelector(".main-header__toggle");
+let meinHeaderAfter = document.querySelector(".main-header::after");
 
 mainToggle.classList.remove("main-header__toggle--nojs");
 

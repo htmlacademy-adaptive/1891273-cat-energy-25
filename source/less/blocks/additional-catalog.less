@@ -11,23 +11,45 @@
     font-family: "Oswald", sans-serif;
     font-size: 24px;
     line-height: 24px;
+    font-weight: normal;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 25px;
     padding-bottom: 36px;
-    border-bottom: 1px solid @color-basic-grey-dark;
     box-sizing: border-box;
+    background-color: @color-white;
+    width: 248px;
+    position: relative;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     border: none;
+    width: 410px;
+    padding-left: 36px;
+    padding-top: 68px;
+    padding-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
+    font-weight: normal;
     grid-column: 1/-1;
+    width: 375px;
     margin: 0;
+    padding: 76px 35px 81px 0;
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: @color-white;
+      left: -40px;
+    }
   }
 }
 
@@ -35,7 +57,7 @@
   @media (min-width: @mobile-width-only) {
     list-style-type: none;
     margin: 0;
-    padding: 0 20px 0 20px;
+    padding: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -44,45 +66,29 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    margin-bottom: 86px;
   }
 }
 
 .additional-catalog__item {
   @media (min-width: @mobile-width-only) {
     padding: 13px 0 19px 0;
-    border-bottom: 1px solid @color-basic-grey-dark;
   }
 
   @media (min-width: @tablet-width) {
-    border: 1px solid @color-basic-grey-dark;
+    padding: 26px 38px 28px 37px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-  }
-}
-
-.additional-product__name {
-  @media (min-width: @mobile-width-only) {
-    margin: 0;
     padding: 0;
-    color: @color-special-grey-dark;
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    padding-bottom: 13px;
   }
 }
 
-.additional-product__criteria,
-.additional-product__value {
-  @media (min-width: @mobile-width-only) {
-    color: @color-special-grey;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 14px;
-    padding-bottom: 15px;
-    display: block;
+.additional-catalog__promo {
+  margin: 35px 0 35px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 69px;
+    margin-bottom: 76px;
   }
 }

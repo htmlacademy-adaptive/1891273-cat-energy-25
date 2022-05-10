@@ -1,16 +1,25 @@
 .product-additional {
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
-    background-color: @color-white;
+    min-height: 429px;
+    background: none;
     border: 2px solid @color-basic-grey-light;
+    padding-top: 52px;
+    margin-top: 82px;
   }
 }
 
 .product-additional__button {
   border: none;
   background-color: @color-white;
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
 }
 
 .product-additional__title {
@@ -20,6 +29,16 @@
   text-transform: uppercase;
   text-align: center;
   color: @color-black-light;
+  margin-top: 23px;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 49px;
+    margin-bottom: 23px;
+    font-weight: normal;
+  }
 }
 
 .product-additional__intro {
@@ -28,12 +47,19 @@
   line-height: 16px;
   color: @color-special-grey;
   text-align: center;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-bottom: 87px;
+  }
 }
 
 .product-additional__button-all {
   padding: 0;
   border: none;
   cursor: pointer;
+  color: @color-special-grey;
 
   &:hover {
     background-color: @color-basic-grey;
@@ -46,5 +72,12 @@
   &:active {
     background-color: @color-basic-grey;
     color: @color-black-opacity;
+  }
+}
+
+.product-additional__icon {
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
   }
 }

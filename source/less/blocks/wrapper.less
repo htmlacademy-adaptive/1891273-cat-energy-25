@@ -1,0 +1,64 @@
+.wrapper {
+  position: relative;
+
+  &--heading-form {
+    border-top: 1px solid @color-grey;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
+  &--program-selection {
+    border-top: 1px solid @color-basic-grey-dark;
+    border-bottom: 1px solid @color-basic-grey-dark;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+
+  &--personal-data {
+    position: relative;
+  }
+
+  &--personal-data::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: @color-basic-grey-dark;
+    box-shadow: 0 -155px @color-basic-grey-dark;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--line {
+    ::before {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 15px;
+      height: 2px;
+      width: 50%;
+      background-color: @color-green;
+      z-index: -1;
+
+      @media (min-width: @tablet-width) {
+        width: 100%;
+        top: 23px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 15px;
+      }
+    }
+  }
+}
