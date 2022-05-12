@@ -30,6 +30,7 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
+  border-top: 1px solid @color-basic-grey;
 
   @media (min-width: @tablet-width) {
     border: 0;
@@ -37,23 +38,6 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 25px;
-  }
-
-  &::before {
-    border-top: 1px solid @color-basic-grey;
-    content: "";
-    position: absolute;
-    display: block;
-    align-self: center;
-    width: 100vw;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
   }
 }
 
