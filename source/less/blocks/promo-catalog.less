@@ -2,29 +2,47 @@
   padding-top: 59px;
 
   @media (min-width: @mobile-width-only) {
-    background: url("/img/cat-carrier.jpeg") no-repeat @color-green;
+    background: url("/img/background/cat-carrier.jpeg") no-repeat @color-green;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/cat-carrier@2x.jpg");
+      background-size: 280px 290px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    background: url("/img/cat-carrier-tablet.jpeg") no-repeat @color-green;
+    background: url("/img/background/cat-carrier-tablet.jpeg") no-repeat @color-green;
     min-height: 200px;
     padding: 0;
     display: flex;
     justify-content: space-between;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/cat-carrier-tablet@2x.jpg");
+      background-size: 707px 200px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
     min-height: 289px;
-    background: url("/img/cat-carrier-desktop.jpeg") no-repeat @color-green;
+    background: url("/img/background/cat-carrier-desktop.jpeg") no-repeat @color-green;
     margin: 0;
     margin-bottom: 86px;
     flex-direction: column;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/background/cat-carrier-desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
   }
 }
 
 .promo-catalog__image {
   padding-bottom: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -45,8 +63,11 @@
   line-height: 20px;
   color: @color-white;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-bottom: 43px;
+  width: 161px;
 
   @media (min-width: @tablet-width) {
     padding: 0;

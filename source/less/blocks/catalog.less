@@ -16,7 +16,23 @@
     margin-left: 22px;
 
     @media (min-width: @tablet-width) {
-      display: none;
+      display: block;
+      position: absolute;
+      right: 62px;
+      top: 81px;
+      width: 200px;
+      height: 211px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      margin-top: 41px;
+      margin-left: 52px;
+      width: 100px;
+      height: 106px;
+      position: relative;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -25,73 +41,23 @@
     margin-left: 13px;
 
     @media (min-width: @tablet-width) {
-      display: none;
-    }
-  }
-
-  &--cat-skinny-tablet {
-    @media (min-width: @mobile-width-only) {
-      display: none;
-    }
-
-    @media (min-width: @tablet-width) {
-      display: block;
-      position: absolute;
-      right: 62px;
-      top: 81px;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
-  }
-
-  &--cat-sport-tablet {
-    @media (min-width: @mobile-width-only) {
-      display: none;
-    }
-
-    @media (min-width: @tablet-width) {
       display: block;
       position: absolute;
       right: 28px;
       top: 91px;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
-  }
-
-  &--cat-skinny-desktop {
-    @media (min-width: @mobile-width-only) {
-      display: none;
-    }
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: block;
-      margin-top: 41px;
-      margin-left: 52px;
-    }
-  }
-
-  &--cat-sport-desktop {
-    @media (min-width: @mobile-width-only) {
-      display: none;
-    }
-
-    @media (min-width: @tablet-width) {
-      display: none;
+      width: 268px;
+      height: 200px;
     }
 
     @media (min-width: @desktop-width) {
       display: block;
       margin-top: 47px;
       margin-left: 33px;
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 134px;
+      height: 100px;
     }
   }
 }

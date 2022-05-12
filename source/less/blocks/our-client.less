@@ -97,12 +97,19 @@
   }
 }
 
-.our-client__image {
-  margin-top: 80px;
-}
-
 .our-client__wrapper {
   position: relative;
+}
+
+.our-client__image {
+  @media (min-width: @tablet-width) {
+    width: 592px;
+    height: 511px;
+    display: block;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .our-client__slider {
