@@ -378,3 +378,24 @@
 .group-input__meaning--additional:hover ~ .group-input__meaning--additional::after {
   border-color: @color-tumb-grey;
 }
+
+.group-input__input--additional:focus ~ .group-input__meaning--additional::after {
+  border-color: @color-green;
+}
+
+.group-input__meaning--additional:focus ~ .group-input__meaning--additional::after {
+  border-color: @color-green;
+}
+
+.group-input__input--program-selection:hover ~ .group-input__heading::after {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+.group-input__input--program-selection:focus ~ .group-input__heading::after {
+  border: 1px solid @color-green;
+}
+
+.group-input__input--program-selection:active ~ .group-input__heading::after {
+  border: 1px solid @color-green;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
