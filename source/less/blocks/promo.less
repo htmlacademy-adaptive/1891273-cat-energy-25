@@ -6,6 +6,10 @@
 .promo {
   background: linear-gradient(@color-green-dark 65%, @color-white 65%);
 
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+
   &::before {
     @media (min-width: @desktop-width) {
       content: "";
