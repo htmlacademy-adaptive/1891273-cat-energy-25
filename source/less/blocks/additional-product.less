@@ -6,7 +6,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    border: 1px solid @color-basic-grey-dark;
+    border-left: 1px solid @color-basic-grey-dark;
+    border-right: 1px solid @color-basic-grey-dark;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -16,6 +17,8 @@
     grid-template-columns: 325px 326px 244px;
     padding-top: 15px;
     padding-bottom: 17px;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -39,7 +42,7 @@
     margin: 0;
     padding: 0;
     color: @color-special-grey-dark;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
@@ -60,7 +63,7 @@
 
 .additional-product__criteria {
   color: @color-special-grey;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
   font-size: 14px;
   line-height: 14px;
   padding-bottom: 15px;
@@ -69,7 +72,7 @@
 
 .additional-product__value {
   color: @color-special-grey;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
   font-size: 14px;
   line-height: 14px;
   padding-bottom: 15px;

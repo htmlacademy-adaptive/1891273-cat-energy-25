@@ -1,12 +1,17 @@
 .catalog {
-  position: relative;
+  display: grid;
+  grid-template-columns: 91px 189px;
 
   @media (min-width: @tablet-width) {
+    display: block;
+    position: relative;
     min-height: 372px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 374px;
+    display: grid;
+    grid-template-columns: 215px 356px;
   }
 }
 
@@ -22,6 +27,7 @@
       top: 81px;
       width: 200px;
       height: 211px;
+      margin: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -47,6 +53,7 @@
       top: 91px;
       width: 268px;
       height: 200px;
+      margin: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -63,16 +70,16 @@
 }
 
 .catalog__heading {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 30px;
+  display: block;
 
   @media (min-width: @mobile-width-only) {
-    position: absolute;
-    left: 91px;
-    top: 30px;
+    width: 150px;
   }
 
   @media (min-width: @tablet-width) {
@@ -80,28 +87,26 @@
     line-height: 36px;
     font-weight: normal;
     position: relative;
-    left: 0;
-    top: 0;
     padding-top: 77px;
     padding-left: 53px;
+    width: 210px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 77px;
-    left: 214px;
+    margin-top: 77px;
     padding: 0;
   }
 }
 
 .catalog__description {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @color-special-grey;
   margin-left: 20px;
   margin-top: 22px;
   margin-right: 33px;
+  grid-column: 1/-1;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -119,6 +124,7 @@
 
 .catalog__link {
   margin: 15px auto 0 19px;
+  grid-column: 1/-1;
 
   @media (min-width: @tablet-width) {
     margin: 52px auto 0 52px;

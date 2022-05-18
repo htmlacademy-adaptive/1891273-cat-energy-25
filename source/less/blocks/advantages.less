@@ -4,7 +4,7 @@
 
 .advantages__title {
   @media (min-width: @mobile-width-only) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
     font-size: 36px;
     line-height: 40px;
     margin: 0;
@@ -117,6 +117,35 @@
 }
 
 .advantages__icon {
+  background-color: @color-green;
+  min-width: 60px;
+  height: 60px;
+  display: block;
+
+  &--leaf {
+    background-image: url("/img/icon_leaf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--glass {
+    background-image: url("/img/icon_tub.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--tableware {
+    background-image: url("/img/icon_eat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--clock {
+    background-image: url("/img/icon_alarm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 40px;
     width: 80px;
@@ -126,7 +155,7 @@
 
 .advantages__description {
   @media (min-width: @mobile-width-only) {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Franklin Gothic Medium", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: @color-special-grey;
