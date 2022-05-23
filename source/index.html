@@ -8,6 +8,12 @@
     <link rel="icon" href="/favicon.ico"/>
     <link rel="icon" href="/img/favicon/favicon32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/img/favicon/favicon152.svg" />
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/js/script.js" as="script">
+    <link rel="preload" href="/img/logo-header.svg" as="image">
+    <link rel="preload" href="/img/foto-cat-energy-chicken.png" as="image">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -42,8 +48,7 @@
     <main class="main-container">
       <section class="promo">
         <div class="promo__wrapper page-container">
-          <h1 class="page-heading page-heading--index">Функциональное<br/> питание для котов
-          </h1>
+          <h1 class="page-heading page-heading--index">Функциональное<br/> питание для котов</h1>
           <span class="promo__intro">Занялся собой? Займись котом!</span>
           <picture>
             <source media="(min-width: 1440px)" srcset="/img/foto-cat-energy-promo-desctop.png, /img/foto-cat-energy-promo-desctop@2x.png 2x" />
@@ -81,7 +86,8 @@
               <h3 class="catalog__heading catalog__heading--sport">Набор массы</h3>
               <p class="catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="catalog__link link-details-catalog" href="catalog.html">
-                <span class="link-details-catalog__text">Kаталог pro</span> <svg class="link-details-catalog__icon" width="24" height="12">
+                <span class="link-details-catalog__text">Kаталог pro</span>
+                <svg class="link-details-catalog__icon" width="24" height="12">
                   <use xlink:href="/img/sprite.svg#arrow"></use>
                 </svg>
               </a>
@@ -107,10 +113,7 @@
             </li>
             <li class="advantages__item advantages__item--four">
               <span class="advantages__icon advantages__icon--clock"></span>
-              <p class="advantages__description">
-                Уже через месяц наслаждайтесь изменениями к лучшему<br />
-                вашего питомца!
-              </p>
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br/>вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -154,7 +157,8 @@
             </div>
             <div class="slider-client__control control-slide control-slide--tablet">
               <button class="control-slide__title control-slide__title--before">Было</button> <input class="control-slide__input" type="range" id="volume" name="volume" min="0" max="592" step="1" />
-              <label class="visually-hidden" for="volume">Volume</label> <button class="control-slide__title control-slide__title--after">Стало</button>
+              <label class="visually-hidden" for="volume">Volume</label>
+              <button class="control-slide__title control-slide__title--after">Стало</button>
             </div>
           </div>
         </div>
@@ -162,7 +166,10 @@
       <section class="location">
         <div class="location__wrapper page-container location__wrapper--background-index">
           <h2 class="visually-hidden">местоположение</h2>
-          <div class="location__discription"><span class="location__invitation">Приглашаем к сотрудничеству дилеров!</span> <span class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span></div>
+          <div class="location__discription">
+            <span class="location__invitation">Приглашаем к сотрудничеству дилеров!</span>
+            <span class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+          </div>
           <div class="location__map"></div>
         </div>
       </section>
@@ -171,7 +178,9 @@
       <div class="footer-container__wrapper page-container">
         <h2 class="visually-hidden">Логотип</h2>
         <a class="footer-container__link link-logo-text" href="#">
-          <svg class="link-logo-text__image" width="128" height="24"><use xlink:href="/img/sprite.svg#footer-logo"></use></svg>
+          <svg class="link-logo-text__image" width="128" height="24">
+            <use xlink:href="/img/sprite.svg#footer-logo"></use>
+          </svg>
         </a>
         <div class="footer-container__social social-network">
           <ul class="social-network__list">
@@ -204,7 +213,9 @@
         <div class="footer-container__html-academy">
           <a class="footer-container__link footer-container__link--html-academy link-html-academy" href="https://htmlacademy.ru">
             <span class="link-html-academy__text">HTML Academy</span>
-            <svg class="link-html-academy__image" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="/img/sprite.svg#htmlacademy-icon"></use></svg>
+            <svg class="link-html-academy__image" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="/img/sprite.svg#htmlacademy-icon"></use>
+            </svg>
           </a>
         </div>
       </div>
