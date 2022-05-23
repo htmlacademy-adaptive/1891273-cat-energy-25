@@ -33,9 +33,9 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 247px 249px;
-    row-gap: 37px;
+    row-gap: 16px;
     column-gap: 137px;
-    margin: 32px 0 47px 0;
+    margin: 32px 0 26px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,29 +72,29 @@
 
   &--one {
     @media (min-width: @tablet-width) {
-      background: url("/img/background/background-advantages-one.png") no-repeat 118px 40px;
+      background: url("/img/background/background-advantages-one.png") no-repeat 126px 40px;
       grid-column: 1/2;
     }
 
     @media (min-width: @desktop-width) {
-      padding-right: 94px;
+      padding-right: 0;
     }
   }
 
   &--two {
     @media (min-width: @tablet-width) {
-      background: url("/img/background/background-advantages-two.png") no-repeat 112px 40px;
+      background: url("/img/background/background-advantages-two.png") no-repeat 122px 38px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-right: 79px;
+      padding-right: 0;
       grid-column: 3/4;
     }
   }
 
   &--three {
     @media (min-width: @tablet-width) {
-      background: url("/img/background/background-advantages-three.png") no-repeat 113px 40px;
+      background: url("/img/background/background-advantages-three.png") no-repeat 124px 38px;
       width: 247px;
     }
 
@@ -106,7 +106,7 @@
 
   &--four {
     @media (min-width: @tablet-width) {
-      background: url("/img/background/background-advantages-four.png") no-repeat 113px 40px;
+      background: url("/img/background/background-advantages-four.png") no-repeat 124px 40px;
       width: 249px;
     }
 
@@ -181,6 +181,7 @@
     color: @color-special-grey;
     margin: 0;
     padding-left: 20px;
+    padding-top: 3px;
   }
 
   @media (min-width: @tablet-width) {
@@ -196,5 +197,6 @@
     margin-top: 20px;
     margin-bottom: 49px;
     box-sizing: border-box;
+    width: 245px;
   }
 }

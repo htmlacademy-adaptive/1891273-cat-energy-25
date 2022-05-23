@@ -3,11 +3,12 @@
 
   @media (min-width: @tablet-width) {
     min-height: 599px;
-    background-color: @color-basic-grey-light;
+    background-color: @color-white;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 400px;
+    position: relative;
   }
 }
 
@@ -18,10 +19,6 @@
   display: flex;
   flex-direction: column;
 
-  &--background-index {
-    background-color: @color-white;
-  }
-
   &--form {
     margin-top: 72px;
   }
@@ -30,10 +27,20 @@
     display: flex;
     flex-wrap: wrap;
     background-color: @color-basic-grey-light;
+    min-height: 198px;
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    background-color: @color-opacity;
+  }
+}
+
+.location__wrapper--desktop {
+  @media (min-width: @desktop-width) {
+    width: 565px;
   }
 }
 
@@ -46,7 +53,8 @@
     height: 198px;
     position: absolute;
     background-color: @color-white;
-    top: 95px;
+    top: 74px;
+    left: 60px;
   }
 }
 
@@ -58,6 +66,7 @@
   display: block;
   padding-top: 26px;
   padding-bottom: 26px;
+  width: 340px;
 
   @media (min-width: @tablet-width) {
     width: 160px;
@@ -66,6 +75,10 @@
     line-height: 26px;
     padding-top: 59px;
     padding-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
   }
 }
 
@@ -76,6 +89,7 @@
   color: @color-special-grey;
   padding-top: 26px;
   padding-bottom: 26px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     width: 172px;
@@ -84,6 +98,12 @@
     line-height: 20px;
     padding-top: 56px;
     padding-bottom: 56px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    margin-right: 63px;
   }
 }
 
