@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 325px 326px 244px;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     border-left: none;
     border-right: none;
   }
@@ -47,10 +47,11 @@
     line-height: 16px;
     text-transform: uppercase;
     padding-bottom: 13px;
+    font-weight: normal;
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -68,6 +69,16 @@
   line-height: 14px;
   padding-bottom: 15px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    padding-top: 11px;
+  }
 }
 
 .additional-product__value {
@@ -80,9 +91,21 @@
 
   @media (min-width: @tablet-width) {
     margin-left: 49px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--two {
+      margin-left: 60px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 38px;
+    padding-bottom: 0;
+    padding-top: 11px;
+
+    &--two {
+      margin-right: 46px;
+    }
   }
 }

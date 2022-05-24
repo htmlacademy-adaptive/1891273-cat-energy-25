@@ -6,19 +6,19 @@
   &--program-selection {
     display: flex;
     flex-direction: column;
-    padding-top: 22px;
-    padding-bottom: 20px;
+    padding-top: 32px;
 
     @media (min-width: @tablet-width) {
       border: 1px solid @color-basic-grey-dark;
       margin-top: 52px;
       padding: 25px 28px;
+      min-height: 144px;
     }
 
     @media (min-width: @desktop-width) {
       margin: 0;
-      width: 568px;
-      min-height: 200px;
+      width: 570px;
+      min-height: 196px;
       box-sizing: border-box;
     }
   }
@@ -32,13 +32,13 @@
       display: grid;
       grid-template-columns: 221px 221px;
       column-gap: 123px;
-      margin-bottom: 54px;
+      margin-bottom: 26px;
     }
 
     @media (min-width: @desktop-width) {
       grid-template-columns: 221px 221px 221px 221px;
       column-gap: 104px;
-      margin: 0 0 61px 0;
+      margin: 0 0  33px 0;
     }
   }
 
@@ -70,7 +70,7 @@
   text-transform: uppercase;
   color: @color-special-grey;
   min-height: 46px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
 
@@ -85,24 +85,36 @@
       justify-content: space-between;
     }
   }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      margin-right: -20px;
+    }
+  }
 }
 
 .group-input__input {
   border: 1px solid @color-form-grey;
-  margin-left: 15px;
+  margin-left: 11px;
   font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @color-special-grey;
-  height: 45px;
   width: 100%;
-  padding-left: 16px;
+  padding-left: 13px;
   box-sizing: border-box;
+  height: 45px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: auto;
+    padding-left: 16px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 17px;
     padding-left: 19px;
   }
 
@@ -131,8 +143,8 @@
     resize: none;
 
     @media (min-width: @tablet-width) {
-      padding-top: 10px;
-      padding-left: 19px;
+      padding-top: 15px;
+      padding-left: 17px;
       text-align: start;
       min-height: 174px;
     }
@@ -141,6 +153,8 @@
       min-height: 174px;
       font-size: 20px;
       line-height: 30px;
+      padding-top: 9px;
+      padding-left: 19px;
     }
   }
 
@@ -157,7 +171,7 @@
   }
 
   &--weight {
-    width: 191px;
+    width: 203px;
 
     @media (min-width: @tablet-width) {
       width: 536px;
@@ -192,10 +206,14 @@
 
     @media (min-width: @tablet-width) {
       width: 551px;
+      margin-left: 16px;
+      padding-left: 23px;
     }
 
     @media (min-width: @desktop-width) {
       width: 486px;
+      margin-left: 21px;
+      padding-left: 18px;
     }
   }
 
@@ -204,10 +222,12 @@
 
     @media (min-width: @tablet-width) {
       width: 535px;
+      padding-left: 22px;
     }
 
     @media (min-width: @desktop-width) {
       width: 472px;
+      padding-left: 17px;
     }
   }
 
@@ -233,7 +253,6 @@
 .group-input__meaning {
   font-size: 16px;
   line-height: 18px;
-  margin-top: 0;
   position: relative;
 
   &--program-selection {
@@ -244,27 +263,54 @@
 
   &--program-selection:not(:last-child) {
     margin-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &--email {
     margin-top: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 1px;
+    }
   }
 
   &--phone {
     margin-top: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 16px;
+    }
   }
 
   &--additional {
-    margin-left: 48px;
-    margin-bottom: 30px;
+    margin-left: 46px;
+    margin-bottom: 24px;
     padding: 0;
     color: @color-black;
     cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 8px;
+    }
 
     @media (min-width: @tablet-width) {
       margin-top: 13px;
       font-size: 20px;
       line-height: auto;
+      margin-bottom: 39px;
+      margin-left: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 11px;
+      margin-left: 59px;
     }
 
     &::after {
@@ -279,6 +325,17 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 26px;
+
+      @media (min-width: @tablet-width) {
+        width: 38px;
+        height: 38px;
+        left: -59px;
+        top: -13px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -11px;
+      }
     }
 
     &:active {
@@ -287,7 +344,11 @@
   }
 
   &--personal-data {
-    padding-top: 15px;
+    padding-top: 16px;
+  }
+
+  &--first {
+    margin-top: 4px;
   }
 
   @media (min-width: @tablet-width) {
@@ -314,6 +375,10 @@
   color: @color-black;
   cursor: pointer;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -328,6 +393,13 @@
     background-position: center;
     background-size: 15px;
     cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      top: -4px;
+      left: -60px;
+      width: 37px;
+      height: 37px;
+    }
   }
 
   &:hover&::after {
@@ -347,12 +419,31 @@
     top: 16px;
     stroke: @color-special-grey-dark;
     fill: none;
+
+    @media (min-width: @tablet-width) {
+      right: 36px;
+      top: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: -20px;
+      padding-left: 18px;
+    }
   }
 
   &--phone {
     right: 33px;
     top: 13px;
     fill: @color-black;
+
+    @media (min-width: @tablet-width) {
+      right: 35px;
+      top: 16px;
+    }
+    @media (min-width: @desktop-width) {
+      right: 37px;
+      top: 15px;
+    }
   }
 }
 
@@ -389,7 +480,7 @@
 }
 
 .group-input__input--program-selection:hover ~ .group-input__heading::after {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
 }
 
 .group-input__input--program-selection:focus ~ .group-input__heading::after {
@@ -398,5 +489,5 @@
 
 .group-input__input--program-selection:active ~ .group-input__heading::after {
   border: 1px solid @color-green;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
