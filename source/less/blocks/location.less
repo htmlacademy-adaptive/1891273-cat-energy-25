@@ -1,14 +1,18 @@
 .location {
   min-height: 474px;
+  background-color: @color-basic-grey-light;
 
   @media (min-width: @tablet-width) {
     min-height: 599px;
-    background-color: @color-white;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 400px;
     position: relative;
+  }
+
+  &--index {
+    background-color: @color-white;
   }
 }
 
@@ -35,6 +39,18 @@
     left: 50px;
     top: 20px;
     background-color: @color-opacity;
+  }
+
+  &--background-index {
+    background-color: @color-white;
+
+    @media (min-width: @tablet-width) {
+      background-color: @color-white;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-color: @color-opacity;
+    }
   }
 }
 
@@ -66,7 +82,7 @@
   display: block;
   padding-top: 26px;
   padding-bottom: 26px;
-  width: 340px;
+  width: 222px;
 
   @media (min-width: @tablet-width) {
     width: 160px;
@@ -88,7 +104,6 @@
   line-height: 20px;
   color: @color-special-grey;
   padding-top: 26px;
-  padding-bottom: 26px;
   display: block;
 
   @media (min-width: @tablet-width) {
@@ -97,8 +112,29 @@
     font-size: 16px;
     line-height: 20px;
     padding-top: 56px;
-    padding-bottom: 56px;
+    padding-bottom: 21px;
     text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    margin-right: 63px;
+  }
+}
+
+.location__sity {
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: @color-special-grey;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: end;
+    margin: 0;
+    margin-right: 40px;
   }
 
   @media (min-width: @desktop-width) {

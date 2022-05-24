@@ -71,7 +71,7 @@
               </fieldset>
               <fieldset class="form-container__group group-input group-input--program-selection">
                 <legend class="visually-hidden">Выбор программы.</legend>
-                <label class="group-input__meaning group-input__meaning--program-selection" for="weight-loss">
+                <label class="group-input__meaning group-input__meaning--program-selection group-input__meaning--first" for="weight-loss">
                   <input class="group-input__input group-input__input--program-selection" type="radio" id="weight-loss" name="program-selection" value="Похудение" checked="checked" />
                   <span class="group-input__heading">Похудение</span>
                 </label>
@@ -102,7 +102,7 @@
                     <use xlink:href="/img/sprite.svg#icon_email"></use>
                   </svg>
                 </div>
-                <div class="group-input__item">
+                <div class="group-input__item group-input__item--phone">
                   <label class="group-input__meaning group-input__meaning--phone" for="phone">Телефон:*</label>
                   <input class="group-input__input group-input__input--phone" type="tel" id="phone" value="8 (960) 900-60-90" name="phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required />
                   <svg class="group-input__icon group-input__icon--phone" width="20" height="21">
@@ -156,13 +156,19 @@
         </form>
       </section>
       <section class="location">
-        <div class="location__wrapper page-container location__wrapper--background-index location__wrapper--form">
+        <div class="location__wrapper page-container location__wrapper--form">
           <h2 class="visually-hidden">местоположение</h2>
           <div class="location__discription">
-            <span class="location__invitation">Приглашаем к сотрудничеству дилеров!</span>
-            <span class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+            <span class="location__invitation">Приглашаем<br> к сотрудничеству дилеров!</span>
+            <div>
+              <span class="location__address">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="location__sity">Санкт-Петербург</span>
+            </div>
           </div>
-          <div class="location__map"></div>
+        </div>
+        <div class="location__map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         </div>
       </section>
     </main>
