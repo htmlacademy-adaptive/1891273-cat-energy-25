@@ -121,50 +121,9 @@
   min-width: 60px;
   height: 60px;
   display: block;
-
-  &--leaf {
-    background-image: url("/img/icon_leaf.png");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/icon_leaf@2x.png");
-      background-size: 30px 32px;
-    }
-  }
-
-  &--glass {
-    background-image: url("/img/icon_tub.png");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/icon_tub@2x.png");
-      background-size: 29px 31px;
-    }
-  }
-
-  &--tableware {
-    background-image: url("/img/icon_eat.png");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/icon_eat@2x.png");
-      background-size: 25px 30px;
-    }
-  }
-
-  &--clock {
-    background-image: url("/img/icon_alarm.png");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/icon_alarm@2x.png");
-      background-size: 32px 32px;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     margin-top: 40px;

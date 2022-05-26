@@ -109,3 +109,15 @@
     }
   }
 }
+
+.additional-product__button {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    grid-column: -1/-2;
+  }
+}
