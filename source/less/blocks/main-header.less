@@ -23,13 +23,13 @@
     outline: 1px solid @color-green;
   }
 
-  &--open {
+  &--close {
     background-image: url("/img/icon-menu-close.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--close {
+  &--open {
     background-image: url("/img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -116,9 +116,10 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    position: absolute;
-    top: 0;
-    right: 30px;
+    margin-left: auto;
+    position: relative;
+    margin-right: 30px;
+    top: -78px;
   }
 
   @media (min-width: @desktop-width) {
@@ -127,7 +128,7 @@
     width: 500px;
     background-color: @color-opacity;
     min-height: 108px;
-    right: 110px;
-    top: 0;
+    margin-right: 110px;
+    top: -109px;
   }
 }
