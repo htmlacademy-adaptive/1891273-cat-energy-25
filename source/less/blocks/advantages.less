@@ -51,19 +51,11 @@
   @media (min-width: @mobile-width-only) {
     display: flex;
     margin-bottom: 20px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: @tablet-width) {
     min-height: 280px;
     flex-direction: column;
-
-    br {
-      display: block;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -141,6 +133,14 @@
     margin: 0;
     padding-left: 20px;
     padding-top: 3px;
+
+    br  {
+      content: " "
+    }
+
+    br:after {
+      content: " "
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -148,6 +148,10 @@
     line-height: 24px;
     padding-left: 0;
     padding-top: 31px;
+
+    br {
+      display: block;
+    }
   }
 }
 

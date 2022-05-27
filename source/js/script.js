@@ -5,10 +5,6 @@ let meinHeaderAfter = document.querySelector(".main-header::after");
 
 mainToggle.classList.remove("main-header__toggle--nojs");
 
-if (mainToggle.classList.contains("main-header__toggle--nojs")) {
-  mainList.classList.add("main-header__list--opened")
-};
-
 mainButton.addEventListener("click", function () {
   if (mainList.classList.contains("main-header__list--closed")) {
     mainList.classList.remove("main-header__list--closed");
