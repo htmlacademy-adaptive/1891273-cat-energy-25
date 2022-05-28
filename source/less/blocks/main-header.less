@@ -23,13 +23,13 @@
     outline: 1px solid @color-green;
   }
 
-  &--close {
+  &--open {
     background-image: url("/img/icon-menu-close.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--open {
+  &--close {
     background-image: url("/img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -52,11 +52,11 @@
     }
   }
 
-  &--closed {
+  &--opened {
     display: none;
   }
 
-  &--opened {
+  &--closed {
     display: block;
     content: "";
     position: absolute;
@@ -66,6 +66,7 @@
 
 .main-header__toggle--nojs .main-header__list {
   position: static;
+  display: block;
 }
 
 .main-header__wrapper {
@@ -117,9 +118,8 @@
     line-height: 24px;
     font-weight: normal;
     margin-left: auto;
-    position: relative;
     margin-right: 30px;
-    top: -78px;
+    margin-top: -78px;
   }
 
   @media (min-width: @desktop-width) {
@@ -129,6 +129,6 @@
     background-color: @color-opacity;
     min-height: 108px;
     margin-right: 110px;
-    top: -109px;
+    margin-top: -109px;
   }
 }
