@@ -1,22 +1,17 @@
-.catalogs {
-  @media (min-width: @tablet-width) {
-  margin-top: -74px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -108px;
-  }
-}
-
 .catalogs__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 3px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 80px;
+    margin-top: 0;
   }
 }
 

@@ -40,6 +40,7 @@
     flex-direction: column;
     box-sizing: border-box;
     min-height: 872px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -83,21 +84,22 @@
     display: block;
     margin: auto;
     margin-top: 5px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 709px;
     height: 609px;
     z-index: -1;
-    top: 335px;
+    top: 15px;
   }
 
   @media (min-width: @desktop-width) {
+    position: absolute;
     display: block;
     right: 220px;
     top: -79px;
     width: 552px;
     height: 499px;
-    margin-top: 4px;
+    margin-top: 112px;
   }
 }
 
@@ -132,20 +134,20 @@
 
   &--top {
     @media (min-width: @tablet-width) {
-      margin-left: 90px;
-      margin-top: 49px;
       width: 244px;
       min-height: 54px;
       font-size: 20px;
       line-height: 20px;
       font-weight: normal;
       padding-top: 17px;
+      position: absolute;
+      left: 90px;
+      bottom: 523px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-left: 80px;
-      margin-top: 52px;
-      top: 290px;
+      left: 80px;
+      bottom: 184px;
       padding-top: 17px;
     }
   }

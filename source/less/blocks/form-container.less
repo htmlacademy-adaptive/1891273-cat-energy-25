@@ -16,12 +16,21 @@
     @media (min-width: @desktop-width) {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 
   &--note {
     @media (min-width: @desktop-width) {
       position: relative;
+    }
+  }
+
+  &--submit {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
 }
@@ -106,7 +115,7 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     width: 568px;
-    margin-bottom: 82px;
+    margin-bottom: 67px;
     margin-left: 1px;
   }
 }
@@ -132,9 +141,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
+    position: relative;
     margin: 0;
-    right: 390px;
-    bottom: 101px;
+    right: -650px;
+    top: -101px;
   }
 }

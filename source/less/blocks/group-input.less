@@ -1,4 +1,8 @@
 .group-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   &--main-form {
     border-bottom: 1px solid @color-basic-grey;
   }
@@ -38,7 +42,7 @@
     @media (min-width: @desktop-width) {
       grid-template-columns: 221px 221px 221px 221px;
       column-gap: 104px;
-      margin: 0 0  33px 0;
+      margin: 0 0  32px 0;
     }
   }
 
@@ -47,6 +51,7 @@
       display: flex;
       justify-content: space-between;
       margin: 0;
+      flex-direction: row;
     }
   }
 
@@ -223,11 +228,13 @@
     @media (min-width: @tablet-width) {
       width: 535px;
       padding-left: 22px;
+      margin-left: 24px;
     }
 
     @media (min-width: @desktop-width) {
       width: 472px;
       padding-left: 17px;
+      margin-left: 30px;
     }
   }
 
@@ -271,9 +278,11 @@
 
   &--email {
     margin-top: 15px;
+    max-width: 70px;
 
     @media (min-width: @tablet-width) {
       margin-top: 16px;
+      width: 63px;
     }
 
     @media (min-width: @desktop-width) {
@@ -283,9 +292,11 @@
 
   &--phone {
     margin-top: 15px;
+    max-width: 70px;
 
     @media (min-width: @tablet-width) {
       margin-top: 16px;
+      width: 85px;
     }
   }
 
@@ -304,7 +315,7 @@
       margin-top: 13px;
       font-size: 20px;
       line-height: auto;
-      margin-bottom: 39px;
+      margin-bottom: 40px;
       margin-left: 58px;
     }
 
@@ -345,6 +356,14 @@
 
   &--personal-data {
     padding-top: 14px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 120px;
+    }
   }
 
   &--first {
